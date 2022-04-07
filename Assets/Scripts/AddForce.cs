@@ -11,16 +11,12 @@ public class AddForce : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        rb.useGravity = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     private void OnCollisionEnter(Collision collision)
     {
         GameObject obj = collision.gameObject;
-        obj.GetComponent<Rigidbody>().AddForce(obj.GetComponent<Transform>().position - transform.position * m_thrustPower);
+        obj.GetComponent<Rigidbody>()?.AddForce(obj.GetComponent<Transform>().position - transform.position * m_thrustPower);
     }
 }
