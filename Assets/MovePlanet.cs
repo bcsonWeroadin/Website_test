@@ -12,7 +12,10 @@ public class MovePlanet : MonoBehaviour
         Debug.Log("collision Enter" + other.gameObject.name);
         //SceneManager.LoadScene("");
         //SceneManager.LoadSceneAsync("Beach Demo Scene 1");
-        StartCoroutine(LoadScean("Beach Demo Scene 1"));
+        if(other.gameObject.CompareTag("Player"))
+        {
+            StartCoroutine(LoadScean("Beach Demo Scene 1"));
+        }
     }
     
 
