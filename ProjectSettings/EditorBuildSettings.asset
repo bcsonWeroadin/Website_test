@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Space/LunarLandscape3D 1.unity
     guid: 7094e6cb15b3f034080d3cc200865a18
   - enabled: 1
-    path: Assets/Scenes/Beach Demo Scene 1.unity
+    path: Assets/Scenes/Beach/Beach Demo Scene 1.unity
     guid: ba1b4e63328856b49bd6ab480c191de0
   m_configObjects: {}
