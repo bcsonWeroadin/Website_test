@@ -2,7 +2,7 @@
 Assembly-CSharp.csproj
 Assembly-CSharp-Editor.csproj
 Website_test.sln
-Library/AnnotationManager
+Library/
 Library/ArtifactDB
 Library/ArtifactDB-lock
 Library/BuildPlayer.prefs
@@ -19125,3 +19125,10 @@ Library/Artifacts/af/afd87316e7b3994c728f0712b7405f7e
 Temp/UnityTempFile-ca458a3218a26274a870bb7645cc9790
 Temp/UnityTempFile-d9576d13bd881e542bb6f2c96b487cc5
 Temp/UnityTempFile-f3fddc2d69c454c4da5b9b39e9b50ce1
+Library/Artifacts/07/07c6573ef4d0f1a5f216bb51d3bd0611
+Library/Artifacts/15/15006753e72480366375d9070d85a9a1
+Library/Artifacts/17/1717d63281179553397013b82414e3cf
+Library/Artifacts/64/64bac646e1470b79bfca7e38258f9ee8
+Library/Artifacts/a1/a19089b253b35546a43a507a831a16b1
+Library/Artifacts/df/dfaaa56037e9dc935f32ee2be15bb80b
+Temp/
