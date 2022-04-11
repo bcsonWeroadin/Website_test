@@ -54,6 +54,10 @@ public class CameraMovement : MonoBehaviour
 
         if(Physics.Linecast(transform.position, m_finalDir, out hit))
         {
+            if (hit.transform.gameObject.CompareTag("Player"))
+            {
+                return;
+            }
             m_finalDistance = Mathf.Clamp(hit.distance , m_minDistance, m_maxDistance);
         }
         else
