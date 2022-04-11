@@ -11,3 +11,5 @@ Assembly-CSharp.csproj
 Assembly-CSharp-Editor.csproj
 Website_test.sln
 Temp/
+.sln
+.csproj
