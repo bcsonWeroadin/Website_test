@@ -19,7 +19,7 @@ namespace UnityStandardAssets.Cameras
         private float m_OriginalDist;             // the original distance to the camera before any modification are made
         private float m_MoveVelocity;             // the velocity at which the camera moved
         private float m_CurrentDist;              // the current distance from the camera to the target
-        private Ray m_Ray = new Ray();                        // the ray used in the lateupdate for casting between the camera and the target
+        private Ray m_Ray = new Ray();            // the ray used in the lateupdate for casting between the camera and the target
         private RaycastHit[] m_Hits;              // the hits between the camera and the target
         private RayHitComparer m_RayHitComparer;  // variable to compare raycast hit distances
 
@@ -42,11 +42,11 @@ namespace UnityStandardAssets.Cameras
             // initially set the target distance
             float targetDist = m_OriginalDist;
 
-            m_Ray.origin = m_Pivot.position + m_Pivot.forward*sphereCastRadius;
+            m_Ray.origin = m_Pivot.position + m_Pivot.forward * sphereCastRadius;
             m_Ray.direction = -m_Pivot.forward;
 
             // initial check to see if start of spherecast intersects anything
-            var cols = Physics.OverlapSphere(m_Ray.origin, sphereCastRadius);
+            var cols = Physics.OverlapSphere(m_Ray.origin, sphereCastRadius); // 중점과 반지름으로 가상의 원을 만들어 추출하려는 반경 이내에 들어와 있는 콜라이더들을 반환하는 함수
 
             bool initialIntersect = false;
             bool hitSomething = false;
