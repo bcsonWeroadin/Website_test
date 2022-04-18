@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class MovePlanet : MonoBehaviour
+public class PlanetTrigger : MonoBehaviour
 {
 
     private void OnTriggerEnter(Collider other)
@@ -28,5 +28,7 @@ public class MovePlanet : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
             Debug.Log(oper.progress);
         }
+        Debug.Log(sceneName + ": 이동완료");
+
     }
 }
